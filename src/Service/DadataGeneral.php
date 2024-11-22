@@ -60,7 +60,7 @@ class DadataGeneral extends AbstractService
      *
      * @throws DadataException|InvalidConfigException
      */
-    public function stat(string $date = null): StatResponse
+    public function stat(?string $date = null): StatResponse
     {
         /** @var StatRequest $request */
         $request = $this->requestFactory->create('stat');
